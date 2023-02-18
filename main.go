@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
@@ -102,5 +103,5 @@ func main() {
         c.JSON(http.StatusNotFound, gin.H{"error": "Book not found"})
     })
 
-    router.Run(":8080")
+    router.Run(":" + os.Getenv("PORT"))
 }
