@@ -38,7 +38,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"title": "The Great Gatsby 
 ```
 
 Delete a book:
-`
+```
 curl -X DELETE http://localhost:8080/books/1
-`
+```
 
