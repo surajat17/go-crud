@@ -23,7 +23,9 @@ Follow these steps:
 To test the API, you can use the following curl commands:
 
 Create a book:
-"curl -X POST -H "Content-Type: application/json" -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "published": "April 10, 1925"}' http://localhost:8080/books"
+```
+curl -X POST -H "Content-Type: application/json" -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "published": "April 10, 1925"}' http://localhost:8080/books"
+```
 
 Read a book:
 "curl http://localhost:8080/books/1"
