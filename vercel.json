@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.go",
+      "use": "@now/go"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/:1"
+    }
+  ],
+  "env": {
+    "GIN_MODE": "release"
+  },
+  "start": "go run main.go"
+}
